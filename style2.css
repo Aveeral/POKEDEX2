@@ -1,0 +1,161 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+.pokemon-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.pokemon-header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 28px;
+}
+
+.back-to-home {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+
+.back-to-home:hover {
+    color: #007BFF;
+}
+
+/* Name & ID */
+.name-and-ID {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name-and-ID .name {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.name-and-ID .number {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Pokémon image */
+.pokemon-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pokemon-image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+
+/* Info section: Height, Weight, Abilities */
+.about-pokemon {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.about-pokemon label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Description */
+.description {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 25px auto;
+    line-height: 1.5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Stats (text version) */
+.stats {
+    max-width: 400px;
+    margin: 0 auto 25px auto;
+    line-height: 1.5;
+    white-space: pre-line; /* keeps JS line breaks */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Next button */
+.next {
+    text-align: center;
+}
+
+.next-pokemon-button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.next-pokemon-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 600px) {
+    .about-pokemon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats, .description {
+        max-width: 90%;
+    }
+
+    .pokemon-image img {
+        max-width: 200px;
+    }
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.type-badge {
+    text-transform: capitalize;
+    background-color: #e0e0e0; /* subtle gray */
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
