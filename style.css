@@ -64,11 +64,17 @@ body {
 
 /* pokemons grid */
 .display-area {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 18px;
+  display: flex;
+  flex-wrap: wrap;         
+  gap: 18px;                
   padding: 10px;
+  justify-content: center; 
 }
+
+.display-area > * {
+  flex: 1 1 150px;          
+}
+
 
 /* card */
 .displayPokemon {
