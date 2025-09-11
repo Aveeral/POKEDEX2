@@ -99,7 +99,7 @@ body {
     max-width: 400px;
     margin: 0 auto 25px auto;
     line-height: 1.5;
-    white-space: pre-line; /* keeps JS line breaks */
+    white-space: pre-line; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -156,7 +156,7 @@ body {
 
 .type-badge {
     text-transform: capitalize;
-    background-color: #e0e0e0; /* subtle gray */
+    background-color: #e0e0e0; 
     padding: 5px 12px;
     border-radius: 12px;
     font-size: 14px;
